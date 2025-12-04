@@ -1,15 +1,19 @@
 const items = [
     {
-    img: "kyyeu.jpg",
-    title: "Kỷ Yếu 2020",
-    caption: "Ozeum Museum home page design"
+        img: "kyyeu.jpg",
+        title: "Kỷ Yếu 2020",
+        caption: "Thư mục kỷ yếu"
     },
     {
-    img: "kyyeu.jpg",
-    title: "Kỷ Yếu 2021",
-    caption: "A new exhibition for you"
-    }
-    // ... your items
+        img: "kyyeu.jpg",
+        title: "Videos",
+        caption: "Thư mục tổng hợp videos"
+    },
+    {
+        img: "kyyeu.jpg",
+        title: "Moments",
+        caption: "Thư mục tổng hợp chung"
+    },
 ];
 
 let current = 0;
