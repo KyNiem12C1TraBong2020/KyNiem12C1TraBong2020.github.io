@@ -22,11 +22,9 @@ const slideshow = document.querySelector('.slideshow');
 function render(currentIdx, nextIdx = null, direction = 1) {
     slideshow.innerHTML = '';
 
-    // Box hiện tại (active)
     const box = createBox(items[currentIdx], true);
 
     if (nextIdx !== null) {
-        // Box tiếp theo cho animation
         const nextBox = createBox(
             items[nextIdx],
             false,
@@ -34,7 +32,6 @@ function render(currentIdx, nextIdx = null, direction = 1) {
         );
         slideshow.appendChild(nextBox);
 
-        // Cho flow tự nhiên: active đang hiển thị, nextBox đang ẩn ngoài phải/trái...
         setTimeout(() => {
             box.classList.remove('active');
             box.classList.add(direction === 1 ? 'to-left' : 'to-right');
@@ -43,7 +40,6 @@ function render(currentIdx, nextIdx = null, direction = 1) {
             nextBox.classList.add('active');
         }, 20);
 
-        // Chuyển current index sau animation
         setTimeout(() => {
             current = nextIdx;
             render(current);
@@ -83,5 +79,4 @@ function createBox(data, isActive, className) {
     return div;
 }
 
-// Initial show
 render(0);
