@@ -12,7 +12,7 @@ const items = [
     {
         img: "kyyeu.jpg",
         title: "Moments",
-        caption: "Thư mục tổng hợp chung"
+        caption: "Thư mục tổng hợp chung các ảnh"
     },
 ];
 
