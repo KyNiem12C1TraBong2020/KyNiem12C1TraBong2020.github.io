@@ -41,7 +41,7 @@ body {
     border-radius: 10%;
     z-index: 1;
     object-fit: fill;
-    border: 6px solid #ffdfc0;
+    /* border: 6px solid #ffdfc0; */
 }
 .caption {
     font-size: 3em;
@@ -53,9 +53,11 @@ body {
 }
 .option-title {
     position: absolute;
-    left: 7vw;
-    top: 12vh;
-    color: #f8eabb;
+    left: 5vw;
+    /* top: 30vh; */
+    bottom: 8vh;
+    /* color: #f8eabb; */
+    color: #fff;
     text-align: left;
     z-index: 2;
     font-size: 3em;

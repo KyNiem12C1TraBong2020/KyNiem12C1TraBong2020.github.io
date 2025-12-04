@@ -2,17 +2,20 @@ const items = [
     {
         img: "kyyeu.jpg",
         title: "Kỷ Yếu 2020",
-        caption: "Thư mục kỷ yếu"
+        caption: "Thư mục kỷ yếu",
+        url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
     },
     {
         img: "kyyeu.jpg",
         title: "Videos",
-        caption: "Thư mục tổng hợp videos"
+        caption: "Thư mục tổng hợp videos",
+        url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
     },
     {
         img: "kyyeu.jpg",
         title: "Moments",
-        caption: "Thư mục tổng hợp chung các ảnh"
+        caption: "Thư mục tổng hợp chung các ảnh",
+        url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
     },
 ];
 
@@ -58,7 +61,7 @@ function createBox(data, isActive, className) {
             <img class="center-image" src="${data.img}" alt="${data.caption}" />
             <button class="arrow next">&#8594;</button>
             <div class="option-title">${data.title} <br>
-                <button class="option-button">More  →</button>
+                <button class="option-button" onclick="window.open('${data.url}', '_blank')">More →</button>
             </div>
         </div>
     `;
