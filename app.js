@@ -108,11 +108,11 @@ function createBox(data, isActive, className) {
 
 render(0);
 
-function checkScreenAndShowSmile() {
+function checkScreenAndShowMobile() {
     const smile = document.querySelector('.smile-icon');
     const mainContent = document.querySelector('.container');
     const slideshow = document.querySelector('.slideshow');
-    if (window.outerWidth < 900) {
+    if (window.outerWidth < 600) {
         if (mainContent) mainContent.style.display = '';
         if (slideshow) {
             // Xóa hết slideshow trước
@@ -221,6 +221,6 @@ function checkScreenAndShowSmile() {
 }
 
 // Khi tài liệu tải xong
-window.addEventListener('DOMContentLoaded', checkScreenAndShowSmile);
+window.addEventListener('DOMContentLoaded', checkScreenAndShowMobile);
 // Khi thay đổi kích thước cửa sổ
-window.addEventListener('resize', checkScreenAndShowSmile);
+window.addEventListener('resize', checkScreenAndShowMobile);
