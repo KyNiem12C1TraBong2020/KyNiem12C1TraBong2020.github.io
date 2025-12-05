@@ -178,7 +178,7 @@ body {
     transform: none;
 }
 
-@media (max-width: 950px) { 
+/* @media (max-width: 950px) { 
     .arrow.prev { left: -30px; }
     .arrow.next { right: -30px; }
-}
+} */
