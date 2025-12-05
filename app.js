@@ -112,7 +112,7 @@ function checkScreenAndShowMobile() {
     const smile = document.querySelector('.smile-icon');
     const mainContent = document.querySelector('.container');
     const slideshow = document.querySelector('.slideshow');
-    if (window.outerWidth < 600) {
+    if (window.outerWidth < 300) {
         if (mainContent) mainContent.style.display = '';
         if (slideshow) {
             // Xóa hết slideshow trước
