@@ -1,7 +1,7 @@
 const items = [
     {
         img: "kyyeu.jpg",
-        title: "Kỷ Yếu 2020",
+        title: "Kỷ Yêu",
         caption: "Thư mục kỷ yếu",
         url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
     },
