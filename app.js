@@ -94,14 +94,14 @@ function createBox(data, isActive, className) {
         e.stopPropagation();
         if (items.length <= 1) return;
         const prevIdx = (current - 1 + items.length) % items.length;
-        render(current, prevIdx, -1); // direction: -1 (slide phải)
+        render(current, prevIdx, -1);
     };
     // Nút next → chuyển sang item sau
     div.querySelector('.arrow.next').onclick = (e) => {
         e.stopPropagation();
         if (items.length <= 1) return;
         const nextIdx = (current + 1) % items.length;
-        render(current, nextIdx, 1); // direction: 1 (slide trái)
+        render(current, nextIdx, 1);
     };
     return div;
 }
@@ -109,7 +109,6 @@ function createBox(data, isActive, className) {
 render(0);
 
 function checkScreenAndShowMobile() {
-    const smile = document.querySelector('.smile-icon');
     const mainContent = document.querySelector('.container');
     const slideshow = document.querySelector('.slideshow');
     if (window.outerWidth < 600) {
@@ -184,25 +183,16 @@ function checkScreenAndShowMobile() {
                 optionTitle.style.fontWeight = 'bold';
                 optionTitle.style.textShadow = '0 3px 16px rgba(0,0,0,0.44)';
                 optionTitle.style.lineHeight = '1.16';
-                // optionTitle.style.fontSize = '1.22em';
-                // optionTitle.style.fontWeight = '600';
-                // optionTitle.style.lineHeight = '1.21';
                 optionTitle.style.boxShadow = '0 0 18px 0 rgba(0,0,0,0.03)';
                 optionTitle.style.zIndex = '2';
 
-                // Đặt option-title vào trong mobileImgWrapper
                 mobileImgWrapper.appendChild(optionTitle);
 
-                // insert lại vào DOM: wrapper chỉ còn mobileImgWrapper, bỏ các node dư
-                // (wrapper.children: mobileImgWrapper, bỏ arrow - đã ẩn, chỉ lấy ảnh + title)
-                // Clear wrapper first:
                 while(wrapper.firstChild) wrapper.removeChild(wrapper.firstChild);
                 wrapper.appendChild(mobileImgWrapper);
 
-                // add vào slideshow
                 slideshow.appendChild(box);
             });
-            // Cho phép scroll dọc
             slideshow.style.overflowY = 'auto';
             slideshow.style.overflowX = 'hidden';
             slideshow.style.display = 'block';
@@ -220,7 +210,5 @@ function checkScreenAndShowMobile() {
     }
 }
 
-// Khi tài liệu tải xong
 window.addEventListener('DOMContentLoaded', checkScreenAndShowMobile);
-// Khi thay đổi kích thước cửa sổ
 window.addEventListener('resize', checkScreenAndShowMobile);
