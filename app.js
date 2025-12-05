@@ -82,7 +82,7 @@ function createBox(data, isActive, className) {
     div.innerHTML = `
         <div class="arrow-img-wrapper">
             <button class="arrow prev">&#8592;</button>
-            <img class="center-image" src="${data.img}" alt="${data.caption}" />
+            <img class="center-image" src="thumbnails/${data.img}" alt="${data.caption}" />
             <button class="arrow next">&#8594;</button>
             <div class="option-title">${data.title} <br>
                 <button class="option-button" onclick="window.open('${data.url}', '_blank')">More →</button>
