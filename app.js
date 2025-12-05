@@ -7,15 +7,33 @@ const items = [
     },
     {
         img: "kyyeu.jpg",
-        title: "Videos",
-        caption: "Thư mục tổng hợp videos",
-        url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
+        title: "Cắm Trại Đi",
+        caption: "Thư mục về cắm trại 2019",
+        url: "https://drive.google.com/drive/folders/1PbXVih8Du9r7ajQtDlGEKlCZD73uWg7y?usp=sharing",
     },
     {
         img: "kyyeu.jpg",
-        title: "Moments",
-        caption: "Thư mục tổng hợp chung các ảnh",
-        url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
+        title: "Nhậu Gì Đếy",
+        caption: "Thư mục nhạy cảm",
+        url: "https://drive.google.com/drive/folders/1CkDO8ouiremm_zYnxs24rcIHZ5pEgQlz?usp=sharing",
+    },
+    {
+        img: "kyyeu.jpg",
+        title: "Banh Bóng",
+        caption: "Thư mục xíu banh bóng",
+        url: "https://drive.google.com/drive/folders/1PJJn81R7-gSc_fGAYDnCn_FeMQq515Y4?usp=sharing",
+    },
+    {
+        img: "kyyeu.jpg",
+        title: "Tiết Thể Dục Cuối",
+        caption: "Thư mục tiết thể dục cuối",
+        url: "https://drive.google.com/drive/folders/1aoSJ8bZhr3_QvggtxyY326vRRvvWFeKn?usp=sharing",
+    },
+    {
+        img: "kyyeu.jpg",
+        title: "Linh Tinh",
+        caption: "Thư mục tổng hợp chung chung",
+        url: "https://drive.google.com/drive/folders/1d0ZXRkjO2vKjkIZwM6oY4FtYhJNV9eW_?usp=sharing",
     },
 ];
 
