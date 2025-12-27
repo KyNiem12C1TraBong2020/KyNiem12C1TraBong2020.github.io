@@ -1,7 +1,7 @@
 const items = [
     {
         img: "kyyeu.jpg",
-        title: "Kỷ Yêu",
+        title: "Kỷ Yếu",
         caption: "Thư mục kỷ yếu",
         url: "https://drive.google.com/drive/folders/1Zu5DIQGuDSyoDyyaBmgzfPG7eoxSBBNr?usp=sharing",
     },
@@ -19,7 +19,7 @@ const items = [
     },
     {
         img: "party.jpg",
-        title: "Liên Hoan (lạc)",
+        title: "Liên Hoan",
         caption: "Thư mục nhạy cảm",
         url: "https://drive.google.com/drive/folders/1nT0e1rSCxJRltu7LyOVUedypq-36lC_8?usp=sharing",
     },
